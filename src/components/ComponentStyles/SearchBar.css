@@ -1,0 +1,37 @@
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    width: 300px;
+    border-radius: 15px;
+    border:2px solid black;
+}
+.location{
+border:1px solid red;
+}
+
+
+
+.search-icon{
+    transform:scale(.4);
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .search-bar{
+        width:600px;
+        height:300px;
+
+  
+    }
+    .location{
+        font-size:
+            35px;
+        border:2px solid red;
+        height:50px;
+    }
+    
+}
