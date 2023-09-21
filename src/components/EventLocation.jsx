@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import "./ComponentStyles/SearchBar.css"
 
 
-function Location({changeData}) {
+function EventLocation({changeData}) {
 
     const [location, setLocation] = React.useState("");
     const handleChangeLocation = (event) => {
         setLocation(event.target.value);
         changeData([location])
+    }
 
   return (
     <div>
@@ -17,13 +18,13 @@ function Location({changeData}) {
      value={location}
     className="location"
     placeholder="Location"
-   onChange={handleChangeLocation}
+    onChange={handleChangeLocation}
   />
   
   </div>
   )
-}
+
 }
 
-export default Location
+export default EventLocation
 
